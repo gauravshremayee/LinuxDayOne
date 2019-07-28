@@ -3,6 +3,8 @@
 
 #BIOS -> MBR -> Kernel Loading ->  System script
 
+#Run levels
+
 #/etc/init startup Scripts
 
 
