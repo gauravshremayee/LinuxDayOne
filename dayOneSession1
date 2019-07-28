@@ -1,0 +1,15 @@
+#linux startup scripts
+
+/etc/init.d/
+
+#init command
+#halt the system
+init 0 
+#single user mode
+init 1 
+#multi user mode
+init 2
+#undefined
+init 4
+#X11 init 3 + graphical
+init 5
