@@ -1,1 +1,68 @@
+#file system 
+
+#commands
+ls 
+pwd
+cd
+
+#system call
+
+strace ls
+
+#
+
+#Check init process is the parent of all process
+ps -ef
+#check for process id 1
+#find other process having PPID 1
+
+#Edit .bashrc and run commands on new terminal session 
+#Run below two commands
+
+sudo vim .bashrc
+
+
+#Adding Users
+
+useradd test
+#set the password
+
+passwd test 
+touch /home/parallels/login
+
+
+#.profile file 
+#update path in .profile file
+#it all depends on with which user you're trying to log in. 
+#The global /etc/profile file is loaded for every user, while the ~/.profile is only loaded for the user.
+
+sudo vim .profile
+#And add some command
+restart the system 
+#then check command output 
+
+#When you open a terminal emulator (gnome-terminal for example), you are executing what is known as an interactive, non-login shell.
+
+#When you log into your machine from the command line, or run a command such as su - username, you are running an interactive login shell.
+
+#When you log in graphically, you are running something completely different. The details will depend on your system and graphical environment but in general, it is the graphical shell that deals with your login. While many graphical shells (including the Ubuntu default) will read /etc/profile and ~/.profile not all of them do.
+
+#Finally, when you run a shell script, it is run in a non-interactive, non-login shell.
+
+The SSH daemon, via the pam_motd module of the PAM library, displays the contents of /etc/motd. Via the pam_env module, it sets the environment variables from /etc/environment and ~/.pam_environment.
+#A login shell is started, and the following files are read in order:
+#/etc/profile
+#/etc/bash.bashrc (the default Ubuntu /etc/profile sources /etc/bash.bashrc).
+#~/.bash_profile. The other files that could have been read here (~/.profile and ~/.bash_login) are ignored because ~/.bash_profile exists.
+
+login via ssh 
+both .profile and .bashrc will run 
+
+
+#File System
+df -lh
+fdisk -l
+
+
+
 
