@@ -1,11 +1,18 @@
 #file system 
 
 #commands
-ls 
-pwd
-cd
 
+ls 
+#current date
+pwd
+#change directory
+cd
+#display file
+cat
 #system call
+
+#check the suer
+whoami
 
 strace ls
 
@@ -30,6 +37,7 @@ useradd test
 passwd test 
 touch /home/parallels/login
 
+#print environment variable 
 
 #.profile file 
 #update path in .profile file
