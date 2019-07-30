@@ -16,7 +16,9 @@ whoami
 
 strace ls
 
-#
+#group add 
+#to add the user geek to the group sudo , use the following command:
+usermod -a -G sudo geek
 
 #Check init process is the parent of all process
 ps -ef
