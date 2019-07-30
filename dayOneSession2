@@ -20,6 +20,30 @@ strace ls
 #to add the user geek to the group sudo , use the following command:
 usermod -a -G sudo geek
 
+-rw------- 1 parallels parallels   77 Jul 30 14:03 nohup.out
+-rw-rw-r-- 1 parallels parallels    0 Jul 30 14:04 login
+
+
+$ sudo usermod -a -G geekgroup geek
+
+$ sudo chown parallels:geekgroup login
+$ls -ltr
+-rw------- 1 parallels parallels   77 Jul 30 14:03 nohup.out
+-rw-rw-r-- 1 parallels geekgroup    7 Jul 30 14:58 login
+
+$ usermod -a -G geekgroup geek
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+
+$ sudo usermod -a -G geekgroup geek
+$ su geek
+Password: 
+$ bash
+geek@k8s-worker-node1:/home/parallels$ vim login
+
+
+
+
 #Check init process is the parent of all process
 ps -ef
 #check for process id 1
