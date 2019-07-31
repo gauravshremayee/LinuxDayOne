@@ -67,6 +67,14 @@ touch /home/parallels/login
 
 #.profile file 
 #update path in .profile file
+
+#create a new user
+
+open /home/newuser/.profile
+
+Add a command and then restart and login to the newuser
+
+
 #it all depends on with which user you're trying to log in. 
 #The global /etc/profile file is loaded for every user, while the ~/.profile is only loaded for the user.
 
